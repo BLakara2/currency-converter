@@ -41,7 +41,7 @@ jobs:
       - name: Build
         run: pnpm build
         env:
-          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}  # 👈 clé injectée ici
+          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
